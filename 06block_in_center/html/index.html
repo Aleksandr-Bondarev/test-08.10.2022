@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Block In Center</title>
+    <style type="text/css">
+        #main-block {
+          position: relative;
+          left: calc(50% - 25vh);
+          height: 50vh;
+          width: 50vh;
+          background-color: green; 
+        }
+        #child-block {
+          height: 20vh;
+          width: 20vh;
+          position: absolute;
+          top: calc(50% - 10vh);
+          left: calc(50% - 10vh);
+          margin: auto;
+          background-color: blue;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div id="main-block">
+            <p><b>1</b></p>
+            <div id="child-block">
+                <p><b>2</b></p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

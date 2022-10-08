@@ -1,0 +1,23 @@
+#main-block {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    left: calc(50% - 25vh);
+    height: 50vh;
+    width: 50vh;
+    background-color: green; 
+}
+
+#main-block p {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+#child-block {
+    height: 20vh;
+    width: 20vh;
+    position: absolute;
+    background-color: blue;
+}
