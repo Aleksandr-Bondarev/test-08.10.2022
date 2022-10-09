@@ -6,9 +6,13 @@ function generateNumber() {
 }
 
 function getHexColor() {
-  let randomColor = '#' + Math.floor(Math.random()*16777215).toString(16);
+  let randomColor = '#';
+  for (let i = 0; i < 6; i += 1) {
+    const code = Math.floor(Math.random() * 16).toString(16);
+    randomColor += code;
+  }
   return randomColor;
-};
+}
 
 function generateSquares() {
   for (let i = 0; i < generateNumber(); i += 1) {
