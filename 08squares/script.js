@@ -5,10 +5,15 @@ function generateNumber() {
   return 10 + Math.floor(Math.random() * 90);
 }
 
+function getHexColor() {
+  let randomColor = '#' + Math.floor(Math.random()*16777215).toString(16);
+  return randomColor;
+};
+
 function generateSquares() {
   for (let i = 0; i < generateNumber(); i += 1) {
     const newBlock = document.createElement('div');
-    newBlock.style.backgroundColor = `#${generateNumber()}${generateNumber()}${generateNumber()}`;
+    newBlock.style.backgroundColor = `${getHexColor()}`;
     newBlock.classList.add('card');
     container.appendChild(newBlock);
   }

@@ -20,4 +20,5 @@ button {
     width: 10vw;
     height: 10vh;
     margin: 1rem 0 0 1rem;
+    border: 1px solid black;
 }
